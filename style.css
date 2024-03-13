@@ -31,7 +31,10 @@ body {
   animation: fadeInUp 1000ms linear forwards;
 }
 .home .nav .heading {
-  color: var(--clr1);
+  /* color: var(--clr1); */
+  background: linear-gradient(to right, #f32170, #cf23cf, #e0b0ff);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
 }
 .home .nav .navLinks {
   display: flex;
@@ -96,7 +99,7 @@ body {
   border: 10px solid black;
   border-radius: 50%;
   box-shadow: 0 0 19px 9px #e0b0ff;
-  animation: fadeInUp 800ms linear forwards;
+  animation: leftToRight 800ms linear forwards;
 }
 .homeDetails .homeInfo {
   position: relative;
@@ -113,6 +116,19 @@ body {
   border: none;
   cursor: pointer;
   transition: 0.3s ease-in-out;
+  border-radius: 12px;
+  margin: 1.1rem 1rem;
+}
+.homeDetails .homeInfo .btn:hover {
+  width: 10rem;
+  height: 2.6rem;
+  background-color: var(--clr2);
+  color: var(--clr1);
+  font-size: 1.3rem;
+  box-shadow: 0 0 12px beige;
+  border: 2px solid pink;
+  cursor: pointer;
+  transition: 0.5s ease-out;
   border-radius: 12px;
   margin: 1.1rem 1rem;
 }
@@ -198,7 +214,7 @@ body {
   }
   .homeDetails .homeInfo #myName {
     color: var(--clr1);
-    font-size: 4rem;
+    font-size: 3rem;
   }
   .homeDetails .homeImg {
     left: 1rem;
@@ -209,7 +225,7 @@ body {
     width: 9rem;
   }
   .homeDetails .homeInfo .homeBtn {
-    margin-top: -2rem;
+    margin-top: -3rem;
     display: flex;
   }
   .homeDetails .homeInfo {
