@@ -186,6 +186,15 @@ body {
     font-size: 2rem;
     font-weight: 400;
   }
+  .homeDetails .homeInfo p {
+    color: grey;
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+  }
+  .homeDetails .homeInfo #myName {
+    color: var(--clr1);
+    font-size: 4rem;
+  }
   .homeDetails .homeImg {
     left: 1rem;
     margin: -1rem;
@@ -197,5 +206,23 @@ body {
   .homeDetails .homeInfo .homeBtn {
     margin-top: -2rem;
     display: flex;
+  }
+  .homeDetails .homeInfo {
+    display: flex;
+    position: relative;
+    top: 0rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    margin: 0 2rem;
+    text-align: center;
+  }
+  .home .nav .heading h2 {
+    font-size: 3rem;
+  }
+  .homeDetails .homeInfo .socialLinks {
+    position: relative;
+    top: -1rem;
   }
 }
