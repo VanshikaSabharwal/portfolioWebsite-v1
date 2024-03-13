@@ -28,6 +28,7 @@ body {
   flex-wrap: wrap;
   position: relative;
   right: -4rem;
+  animation: fadeInUp 1000ms linear forwards;
 }
 .home .nav .heading {
   color: var(--clr1);
@@ -57,6 +58,7 @@ body {
   width: 100%;
   height: 500px;
   z-index: 1000;
+  animation: leftToRight 1000ms linear forwards;
 }
 .home .sidebar .sideBarLinks li a {
   text-decoration: none;
@@ -94,10 +96,12 @@ body {
   border: 10px solid black;
   border-radius: 50%;
   box-shadow: 0 0 19px 9px #e0b0ff;
+  animation: fadeInUp 800ms linear forwards;
 }
 .homeDetails .homeInfo {
   position: relative;
   top: 7rem;
+  animation: rightToLeft 1000ms linear forwards;
 }
 .homeDetails .homeInfo .btn {
   width: 10rem;
@@ -137,6 +141,7 @@ body {
 .homeDetails .homeInfo #myName {
   color: var(--clr1);
   font-size: 5rem;
+  font-family: math;
 }
 /* media query  */
 @media (max-width: 925px) {
@@ -224,5 +229,49 @@ body {
   .homeDetails .homeInfo .socialLinks {
     position: relative;
     top: -1rem;
+  }
+}
+
+/* animation  */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(-40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    transform: scale(0.6) translateZ(0);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateZ(0);
+  }
+}
+@keyframes rightToLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes leftToRight {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
   }
 }
