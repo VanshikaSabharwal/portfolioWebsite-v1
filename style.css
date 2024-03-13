@@ -58,7 +58,7 @@ body {
   width: 100%;
   height: 500px;
   z-index: 1000;
-  animation: leftToRight 1000ms linear forwards;
+  animation: leftToRight 800ms linear forwards;
 }
 .home .sidebar .sideBarLinks li a {
   text-decoration: none;
