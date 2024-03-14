@@ -75,6 +75,11 @@ body {
   text-decoration: none;
   color: var(--clr1);
 }
+.home .nav ul li a:hover {
+  border-bottom: 4px dotted;
+  transition: 0.5s ease-in-out;
+}
+
 .bi-list {
   display: none;
   color: var(--clr1);
@@ -148,6 +153,17 @@ body {
   padding: 3px;
   border-radius: 50%;
   border: 3px solid black;
+}
+.homeDetails .homeInfo .socialLinks .bi-twitter-x:hover,
+.bi-linkedin:hover,
+.bi-github:hover {
+  background-color: var(--clr2);
+  padding: 3px;
+  border-radius: 50%;
+  border: 3px solid black;
+  position: relative;
+  bottom: 12px;
+  transform: scale(1.2);
 }
 .homeDetails .homeInfo .socialLinks {
   position: relative;
@@ -241,6 +257,9 @@ body {
     gap: 3rem;
     margin: 0 2rem;
     text-align: center;
+  }
+  .homeDetails .homeInfo .homeLines {
+    margin-top: 2rem;
   }
   .home .nav .heading h2 {
     font-size: 3rem;
