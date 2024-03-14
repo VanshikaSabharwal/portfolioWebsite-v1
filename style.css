@@ -17,7 +17,7 @@ body {
   background-color: var(--clr2);
   max-width: 100%;
   overflow-x: hidden;
-  cursor: url(img/cursorPointer.png), pointer;
+  cursor: url(img/cursorPointer2.png), pointer;
 }
 .home {
   height: 100vh;
@@ -53,6 +53,7 @@ body {
   justify-content: center;
   flex-wrap: wrap;
   margin: 0 1rem;
+  cursor: url(img/cursorHand.png), auto !important;
 }
 .home .sidebar .sideBarLinks {
   display: none;
@@ -76,10 +77,12 @@ body {
   text-decoration: none;
   color: var(--clr1);
   font-size: 2rem;
+  cursor: url(img/cursorHand.png), auto !important;
 }
 .home .nav ul li a {
   text-decoration: none;
   color: var(--clr1);
+  cursor: url(img/cursorHand.png), auto !important;
 }
 .home .nav ul li a:hover {
   border-bottom: 4px dotted;
@@ -115,6 +118,12 @@ body {
   box-shadow: 0 0 19px 9px #e0b0ff;
   animation: leftToRight 800ms linear forwards;
 }
+
+.homeDetails .homeImg img:hover {
+  transition: 0.5s;
+  box-shadow: 0 0 39px 9px #e0b0ff;
+}
+
 .homeDetails .homeInfo {
   position: relative;
   top: 7rem;
@@ -213,7 +222,7 @@ body {
 }
 .about .aboutContainer .aboutImg {
   width: 300px;
-  height: 340px;
+  height: 370px;
   margin: 0 auto;
 }
 .about .aboutContainer .aboutImg img {
@@ -222,12 +231,60 @@ body {
   filter: drop-shadow(0 0 10px #e0b0ff);
 }
 
+/* projects page  */
+.projects {
+  width: 100%;
+  height: 100vh;
+}
+.projects .projectsDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  margin-top: 2rem;
+}
+.projects .projectsDetails .projectContainer {
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr;
+  grid-gap: 3rem;
+}
+.projects .projectsDetails h3 {
+  text-align: center;
+  font-size: 3.5rem;
+  color: #e0b0ff;
+}
+.projects .projectsDetails .projectContainer .projectCard {
+  display: flex;
+  background: #e0b0ff;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 3rem;
+  border-radius: 15px;
+  gap: 1rem;
+}
+.projects .projectsDetails .projectContainer .projectCard img {
+  width: 300px;
+  height: 300px;
+  border-radius: 15px;
+  box-shadow: 0 0 22px black;
+}
+.projects .projectsDetails .projectContainer .projectCard .linkAndDetail p {
+  color: #222121;
+}
+.projects .projectsDetails .projectContainer .projectCard .linkAndDetail {
+  display: flex;
+}
+.projects .projectsDetails .projectContainer .projectCard .linkAndDetail svg {
+  width: 6rem;
+}
+
 /* media query  */
 
 @media (max-width: 925px) {
   .bi-list {
     display: initial;
   }
+
   .home .nav {
     display: flex;
     align-items: center;
@@ -285,13 +342,7 @@ body {
   .home .nav .heading h2 {
     font-size: 3rem;
   }
-  .about {
-    width: 100%;
-    height: 100vh;
-    /* margin-top: 30rem; */
-    position: relative;
-    top: 20rem;
-  }
+
   .about .aboutContainer {
     display: grid;
     grid-template-columns: none;
@@ -306,9 +357,33 @@ body {
     align-items: normal;
     gap: 1rem;
   }
+  .about .aboutContainer .aboutImg img {
+    display: none;
+  }
+  .projects .projectsDetails .projectContainer {
+    display: grid;
+    grid-template-rows: 2fr 2fr 2fr;
+    grid-gap: 3rem;
+    grid-template-columns: none;
+  }
+  .projects {
+    width: 100%;
+    height: 100vh;
+    margin-top: 15rem;
+  }
+  .about {
+    width: 100%;
+    height: 100vh;
+    margin-top: 30rem;
+    position: relative;
+    top: 20rem;
+  }
 }
 
 @media (max-width: 500px) {
+  .about .aboutContainer .aboutImg img {
+    display: initial;
+  }
   .homeDetails .homeInfo p {
     color: grey;
     font-size: 1.4rem;
@@ -318,7 +393,7 @@ body {
     margin-left: 0rem;
   }
   .about {
-    margin-top: 11rem;
+    /* margin-top: 11rem; */
   }
   .about .aboutContainer .aboutDetails h3 {
     font-size: 3rem;
@@ -355,7 +430,7 @@ body {
   }
   .homeDetails .homeInfo #myName {
     color: var(--clr1);
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
   .homeDetails .homeImg {
     left: 0rem;
@@ -393,8 +468,16 @@ body {
     position: relative;
     top: -1rem;
   }
-  .about {
-    top: 0;
+  .projects .projectsDetails .projectContainer {
+    display: grid;
+    grid-template-columns: none;
+    grid-template-rows: 2fr 2fr 2fr;
+    grid-gap: 3rem;
+  }
+  .projects {
+    width: 100%;
+    height: 100vh;
+    margin-top: 40rem;
   }
 }
 .home .nav {
