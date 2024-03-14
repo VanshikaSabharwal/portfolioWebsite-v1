@@ -236,9 +236,11 @@ body {
     font-size: 3rem;
   }
   .homeDetails .homeImg {
-    left: 1rem;
+    left: 3rem;
     margin: -1rem;
     padding: 2rem;
+    width: 330px;
+    height: 330px;
   }
   .homeDetails .homeInfo .btn {
     width: 9rem;
