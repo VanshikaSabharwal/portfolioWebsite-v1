@@ -18,7 +18,7 @@ a {
 }
 body {
   background-color: var(--clr2);
-  max-width: 100%;
+
   overflow-x: hidden;
   cursor: url(img/cursorPointer2.png), pointer;
 }
@@ -314,7 +314,7 @@ body {
   width: 100%;
   height: 100vh;
   position: relative;
-  top: 60em;
+  top: 60rem;
 }
 .services .servicesContainer {
 }
@@ -331,7 +331,7 @@ body {
 }
 .services .servicesContainer .servicesBox {
   background-color: #e0b0ff;
-  height: 250px;
+  height: 400px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -341,10 +341,7 @@ body {
   border-radius: 12px;
   box-shadow: 0 0 27px beige;
 }
-.services .servicesContainer .servicesBox .bi-code-slash {
-}
-.services .servicesContainer .servicesBox h3 {
-}
+
 .services .servicesContainer .servicesBox a {
   text-align: justify;
   text-decoration: none;
@@ -360,8 +357,113 @@ body {
   background: gray;
 }
 
-/* media query  */
+/* contact section  */
+.contact {
+  width: 100%;
+  height: 100vh;
+  margin-top: 63rem;
+}
+.contact .contactContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  gap: 2rem;
+  padding: 1rem;
+  flex-direction: column;
+}
+.contact .contactContainer h2 {
+  font-size: 4rem;
+  color: var(--clr1);
+}
+.contact .contactContainer form input {
+  color: white;
+}
 
+.contact .contactContainer form input,
+textarea {
+  color: white;
+  background: transparent;
+  border: 2px solid hotpink;
+  border-radius: 5px;
+  padding: 5px 7px;
+  width: 15rem;
+}
+.contact .contactContainer form textarea:focus,
+input:focus {
+  background-color: bisque;
+  color: #000000;
+}
+.contact .contactContainer form input:focus {
+  color: #000000;
+  background-color: bisque;
+}
+.contact .contactContainer form textarea::selection,
+input:focus {
+  color: #000;
+  background-color: bisque;
+}
+.contact .contactContainer form input::selection {
+  color: #000;
+  background-color: bisque;
+}
+.contact .contactContainer form button {
+  padding: 4px 6px;
+  width: 6rem;
+  font-size: 1rem;
+  background: hotpink;
+
+  width: 10rem;
+  height: 2.6rem;
+  background-color: var(--clr1);
+  color: var(--clr2);
+  font-size: 1.3rem;
+  box-shadow: 0 0 12px hotpink;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  border-radius: 12px;
+  margin: 1.1rem 1rem;
+}
+
+/* footer section  */
+.footer {
+  position: relative;
+  width: 100%;
+  /* height: 68px; */
+  /* background-color: #222121; */
+  color: white;
+  /* padding: 9px 3px; */
+  /* margin: 0 auto; */
+  /* margin-top: -6rem; */
+  bottom: -92px;
+  text-align: center;
+}
+/* --------------------------------media query ------------------------------------------------------ */
+@media (max-width: 1250px) and (min-width: 925px) {
+  .projects {
+    width: 100%;
+    height: 100vh;
+    margin-top: -8rem;
+  }
+  .services {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    top: 40rem;
+  }
+  .contact {
+    width: 100%;
+    height: 100vh;
+    margin-top: 30rem;
+  }
+  .homeDetails {
+    top: 5rem;
+  }
+  .homeDetails .homeInfo #myName {
+    font-size: 4rem;
+  }
+}
 @media (max-width: 925px) {
   .bi-list {
     display: initial;
@@ -451,14 +553,30 @@ body {
   .projects {
     width: 100%;
     height: 100vh;
-    margin-top: 15rem;
   }
   .about {
     width: 100%;
     height: 100vh;
     margin-top: 30rem;
     position: relative;
-    top: 20rem;
+  }
+  .services {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    top: 155rem;
+  }
+  .services .servicesContainer .servicesDetail {
+    display: grid;
+    grid-template-columns: none;
+    grid-template-rows: 2fr 2fr 2fr;
+    grid-gap: 2rem;
+    margin: 2rem 3rem;
+  }
+  .contact {
+    width: 100%;
+    height: 100vh;
+    margin-top: 200rem;
   }
 }
 
@@ -495,7 +613,8 @@ body {
   }
   .about .aboutContainer .aboutDetails p {
     color: gray;
-    text-align: justify;
+    text-align: center;
+    margin-left: -2rem;
   }
   .home .nav {
     width: 100%;
@@ -585,7 +704,123 @@ body {
     width: 100%;
     height: 100vh;
     position: relative;
-    top: 184rem;
+    top: 175rem;
+  }
+  .contact .contactContainer h2 {
+    font-size: 3rem;
+    color: var(--clr1);
+  }
+  .contact {
+    width: 100%;
+    height: 100vh;
+    margin-top: 220rem;
+  }
+  .contact .contactContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2rem;
+    padding: 1rem;
+    flex-direction: column;
+  }
+  .about .aboutContainer .aboutDetails {
+    text-align: center;
+  }
+  .about .aboutContainer {
+    display: grid;
+    grid-template-rows: 3fr 2fr;
+    grid-template-columns: none;
+    /* margin: 1rem 2rem; */
+    grid-gap: 4rem;
+  }
+  .about {
+    margin-top: 5rem;
+    top: 5rem;
+  }
+  .projects {
+    width: 100%;
+    height: 100vh;
+    margin-top: 35rem;
+    display: flex;
+  }
+
+  .services .servicesContainer h2 {
+    text-align: center;
+    font-size: 3rem;
+    color: var(--clr1);
+  }
+}
+@media (max-width: 350px) {
+  .services .servicesContainer .servicesDetail {
+    display: grid;
+    grid-template-columns: none;
+    grid-template-rows: 2fr 2fr 2fr;
+    grid-gap: 2rem;
+    margin: 2rem 3rem;
+  }
+  .services {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    top: 175rem;
+    left: 1rem;
+  }
+  .footer {
+    width: 129%;
+    font-size: 0.8rem;
+    height: 68px;
+    /* background-color: #222121; */
+    color: white;
+    /* padding: 9px 3px; */
+    /* margin: 0 auto; */
+    margin-top: -6rem;
+    text-align: center;
+  }
+
+  .services {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    top: 175rem;
+    left: 1rem;
+  }
+  .services .servicesContainer .servicesDetail {
+    display: grid;
+    grid-template-columns: none;
+    grid-template-rows: 2fr 2fr 2fr;
+    grid-gap: 2rem;
+    margin: 2rem 3rem;
+  }
+  .footer {
+    text-align: center;
+    font-size: 0.8rem;
+    width: 120%;
+    line-height: 12px;
+  }
+  .contact {
+    width: 100%;
+    height: 100vh;
+    margin-top: 220rem;
+    margin-left: 3rem;
+  }
+  .services .servicesContainer h2 {
+    text-align: end;
+    font-size: 3rem;
+    color: var(--clr1);
+  }
+  .services .servicesContainer .servicesBox {
+    background-color: #e0b0ff;
+    height: 400px;
+    width: 306px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: normal;
+    gap: 2rem;
+    padding: 1rem 2rem;
+    border-radius: 12px;
+    box-shadow: 0 0 27px beige;
   }
 }
 .home .nav {

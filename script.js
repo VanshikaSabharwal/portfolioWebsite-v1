@@ -7,3 +7,7 @@ sideBar.addEventListener("click", () => {
 cross.addEventListener("click", () => {
   sideBarList.style.display = "none";
 });
+
+const footer = document.querySelector(".footer");
+let year = new Date().getFullYear();
+footer.innerHTML = `Copyright &copy; ${year} by Vanshika Sabharwal | All Rights Reserved.`;
