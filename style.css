@@ -611,10 +611,15 @@ input:focus {
   .about .aboutContainer .aboutDetails {
     text-align: center;
   }
+  .detailsAboutMe {
+    width: 100%;
+    margin: 2px 3px;
+  }
   .about .aboutContainer .aboutDetails p {
     color: gray;
     text-align: justify;
     margin-left: -2rem;
+    width: 100%;
   }
   .home .nav {
     width: 100%;
