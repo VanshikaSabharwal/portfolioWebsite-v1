@@ -613,7 +613,7 @@ input:focus {
   }
   .about .aboutContainer .aboutDetails p {
     color: gray;
-    text-align: center;
+    text-align: justify;
     margin-left: -2rem;
   }
   .home .nav {
