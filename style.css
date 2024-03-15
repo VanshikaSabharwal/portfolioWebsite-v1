@@ -674,7 +674,7 @@ input:focus {
   }
   .homeDetails .homeInfo #myName {
     color: var(--clr1);
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
   .homeDetails .homeImg {
     left: 0rem;
@@ -791,6 +791,16 @@ input:focus {
     text-align: center;
     font-size: 3rem;
     color: var(--clr1);
+  }
+  .toggleMode i {
+    font-size: 30px;
+    position: absolute;
+    right: 0.5rem;
+    top: 1.2rem;
+    width: 30px;
+    height: 30px;
+    color: white;
+    z-index: 9999;
   }
 }
 @media (max-width: 350px) {
