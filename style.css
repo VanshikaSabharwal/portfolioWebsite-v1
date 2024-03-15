@@ -199,7 +199,7 @@ body {
 .homeDetails .homeInfo #myName {
   color: var(--clr1);
   font-size: 5rem;
-  font-family: "Grenze Gotisch", serif;
+  font-family: "Merienda", cursive;
 }
 
 /* about page  */
@@ -645,7 +645,7 @@ input:focus {
   }
   .homeDetails .homeInfo #myName {
     color: var(--clr1);
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
   .homeDetails .homeImg {
     left: 0rem;
