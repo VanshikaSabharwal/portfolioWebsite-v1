@@ -275,21 +275,21 @@ body {
 }
 .projects .projectsDetails .projectContainer .projectCard {
   display: flex;
-  background: linear-gradient(180deg, #000000, #3b363b, #e0b0ff) !important;
+  background: linear-gradient(180deg, #ebd8eb, #ab6dab, #e0b0ff) !important;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 2rem 3rem;
   border-radius: 15px;
   gap: 1rem;
-  box-shadow: rgba(0, 0, 0, 0.4) 0px 15px 35px -15px;
+  box-shadow: rgba(0, 0, 0, 3.4) 0px 15px 35px -15px;
 }
 .projects .projectsDetails .projectContainer .projectCard img {
   width: 300px;
   height: 300px;
   border-radius: 15px;
   box-shadow: 0 0 22px black;
-  border: double;
+  border: 2px double white;
 }
 .projects
   .projectsDetails
@@ -376,7 +376,7 @@ body {
   gap: 2rem;
   padding: 1rem 2rem;
   border-radius: 12px;
-  box-shadow: 0 0 27px beige;
+  box-shadow: 0 0 27px #534559;
 }
 
 .services .servicesContainer .servicesBox a {
