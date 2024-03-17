@@ -750,7 +750,7 @@ input:focus {
     height: 100vh;
     position: relative;
     top: 175rem;
-    left: 2rem;
+    left: 1rem;
   }
   .contact .contactContainer h2 {
     font-size: 2rem;
