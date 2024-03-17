@@ -26,5 +26,6 @@ icon.addEventListener("click", function () {
     body.style.background = "white";
     icon.style.color = "black";
     body.style.transition = "2s";
+    footer.style.color = "black";
   }
 });
