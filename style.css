@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Grenze+Gotisch:wght@100..900&family=Merienda:wght@300..900&display=swap");
-
+html {
+  margin-left: 1rem;
+}
 * {
   margin: 0;
   padding: 0;
@@ -741,7 +743,7 @@ input:focus {
     grid-template-columns: none;
     grid-template-rows: 2fr 2fr 2fr;
     grid-gap: 2rem;
-    margin: 2rem 3rem;
+    margin: 2rem 4rem;
   }
   .services {
     width: 100%;
@@ -759,6 +761,8 @@ input:focus {
     width: 100%;
     height: 100vh;
     margin-top: 220rem;
+    position: relative;
+    top: 10rem;
   }
   .contact .contactContainer {
     display: flex;
@@ -791,7 +795,7 @@ input:focus {
     height: 100vh;
     margin-top: 35rem;
     display: flex;
-    margin-left: 1rem;
+    margin-left: 2rem;
   }
 
   .services .servicesContainer h2 {
@@ -868,7 +872,7 @@ input:focus {
     font-size: 2.5rem;
     color: var(--clr1);
     position: relative;
-    left:0;
+    left: 0;
   }
   .services .servicesContainer .servicesBox {
     background-color: #e0b0ff;
