@@ -24,10 +24,12 @@ a {
   text-decoration: none;
 }
 body {
+  align-items: center;
   background-color: var(--clr2);
-
+  display: flex;
   overflow-x: hidden;
   cursor: url(img/cursorPointer2.png), pointer;
+  flex-direction: column;
 }
 .home {
   height: 100vh;
